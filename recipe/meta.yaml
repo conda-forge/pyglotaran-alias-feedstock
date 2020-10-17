@@ -1,5 +1,5 @@
 {% set name = "pyglotaran-alias" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 36d296867c994fa583247264d8bdb6662a056018b8d7ae0f86a22cd49dc3a3aa
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
+  sha256: 7d6a62c40f316b6189c22a74a7fb303879b90c36ca2156720a9ff001d0a5d78c
 
 build:
   number: 0
